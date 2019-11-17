@@ -1,24 +1,5 @@
 @import "./variables";
 
-/**
- * Fluid typography
- * pulled from https://css-tricks.com/snippets/css/fluid-typography/
- */
-// html {
-//     font-size: 20px;
-// }
-
-// @media screen and (min-width: 320px) {
-//     html {
-//         font-size: calc(16px + 6 * ((100vw - 320px) / 680));
-//     }
-// }
-// @media screen and (min-width: 1000px) {
-//     html {
-//         font-size: 30px;
-//     }
-// }
-
 * {
     box-sizing: border-box;
 }
@@ -34,4 +15,16 @@ h1, h2, h3, h4, h5, h6 {
 
 em {
     font-family: $font-italic;
+}
+
+a {
+    color: $blue;
+}
+
+img {
+    max-width: 100%;
+
+    &.circle {
+        border-radius: 50%;
+    }
 }
