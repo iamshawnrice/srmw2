@@ -5,10 +5,10 @@ import {
     Switch,
 } from "react-router-dom";
 
+import data from "./data";
 import { Home } from "./pages/Home";
 
 import "./style.scss";
-
 
 function App() {
     return (
@@ -16,7 +16,7 @@ function App() {
             <div className="app">
                 <Switch>
                     <Route path="/">
-                        <Home />
+                        <Home milestones={data.pages.introduction.milestones} />
                     </Route>
                 </Switch>
             </div>
